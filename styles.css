@@ -1,0 +1,138 @@
+/********** GENERAL ***********/
+h1 {
+    font-family: Cinzel, sans-serif;
+}
+
+h2 {
+    font-family: quicksand, sans-serif;
+}
+
+p {
+    font-family: quicksand, sans-serif;
+}
+
+
+/********** BANNER ***********/
+
+body {
+    background-color: rgb(235, 226, 220);
+}
+
+#cabecera {
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+#cabecera p {
+    font-family: cinzel, sans-serif;
+    font-size: 40px;
+}
+
+#banner {
+    height: 1900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(images/manos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h1 {
+    font-size: 90px;
+    text-align: center;
+    color: black;
+}
+
+#banner h2 {
+    font-weight: 100;
+    font-size: 40px;
+    color: black;
+}
+
+#info {
+    width: 900px;
+    margin: auto;
+}
+
+.fecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+}
+
+.fecha h2 {
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+}
+
+#info .ceremonia {
+    margin-top: 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#info .ceremonia img {
+    width: 400px;
+}
+
+#info .ceremonia div {
+    width: 340px;
+}
+
+#info .ceremonia h3 {
+    font-size: 40px;
+    font-family: cinzel;
+    padding-right: 40px;
+}
+
+#info .ceremonia a {
+    font-size: 25px;
+    padding-right: 40px;
+}
+
+#info .comida {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info .comida img {
+    width: 500px;
+}
+
+#info .comida h3 {
+    font-size: 40px;
+    font-family: cinzel;
+    padding-left: 40px;
+}
+
+#info .comida a {
+    font-size: 25px;
+    padding-left: 40px;
+}
+
+#footer {
+    background-color: black;
+    height: 500px;
+    margin-top: 200px;
+}
+ 
+
+
+
+
+
