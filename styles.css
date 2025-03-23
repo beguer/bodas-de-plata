@@ -1,0 +1,280 @@
+/********** GENERAL ***********/
+h1 {
+    font-family: Cinzel, sans-serif;
+}
+
+h2 {
+    font-family: cinzel, sans-serif;
+}
+
+p {
+    font-family: quicksand, sans-serif;
+}
+
+
+/********** BANNER ***********/
+
+body {
+    background-color: white;
+}
+
+#cabecera {
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+#cabecera p {
+    font-family: cinzel, sans-serif;
+    font-size: 40px;
+}
+
+#banner {
+    height: 1300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(images/Documento\ escaneado\ 2\ copia\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h1 {
+    font-size: 90px;
+    text-align: center;
+    color: black;
+}
+
+#banner h2 {
+    font-weight: 100;
+    font-size: 40px;
+    color: black;
+}
+
+#info {
+    width: 900px;
+    margin: auto;
+}
+
+/********** NOMBRE ***********/
+.nombres {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 150px;
+    color: rgb(247, 241, 237);
+    background-color: rgb(38, 48, 86);
+}
+
+.nombres h1 {
+    font-weight: 100;
+    margin-bottom: 0
+}
+
+.nombres h2 {
+    font-size: 45px;
+    font-weight: 100;
+}
+
+/********** CEREMONIA ***********/
+
+#info h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: cinzel, sans-serif;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    color: rgb(38, 48, 86);
+}
+
+#info .frase1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 100px;
+    margin-top: 80px;
+}
+
+#info .frase1 p {
+    font-size: 35px
+}
+
+#info .raya {
+    height: 6px;
+    background-color: rgb(38, 48, 86);
+    margin-top: 80px;
+    border-radius: 20PX;
+}
+
+#info .ceremonia {
+    margin-top: 160px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#info .ceremonia img {
+    width: 350px;
+    margin-left: 60px;
+}
+
+#info .ceremonia div {
+    width: 340px;
+    padding-right: 40px;
+}
+
+#info .ceremonia h3 {
+    font-size: 30px;
+    font-family: cinzel;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+#info .ceremonia h4 {
+    font-size: 50px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#info .ceremonia p {
+    font-size: 25px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+#info .ceremonia button {
+    background-color: rgb(38, 48, 86);
+    margin-top: 20px;
+    padding: 15px 50px;
+    margin-top: 20px;
+    border-radius: 45px;
+    text-align: center;
+}
+
+#info .ceremonia button a {
+    color: rgb(247, 241, 237);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/********** COMIDA ***********/
+#info .comida {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info .comida img {
+    width: 500px;
+}
+
+#info .comida div {
+    width: 340px;
+    padding-right: 40px;
+}
+
+#info .comida .textos {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+#info .comida h3 {
+    font-size: 30px;
+    font-family: cinzel;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+#info .comida h4 {
+    font-size: 50px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#info .comida p {
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#info .comida button {
+    width: 195px;
+    background-color: rgb(38, 48, 86);
+    margin-top: 20px;
+    border-radius: 45px;
+    padding: 15px;
+    text-align: center;
+}
+
+#info .comida button a {
+    color: rgb(247, 241, 237);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/********** CARRUSEL ***********/
+#carrusel {
+    width: 100%; /* Carrusel a ancho completo */
+    height: 1000px; /* Altura fija */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.fotos {
+    display: flex;
+    width: calc(1000px * 12); /* 6 imágenes originales + 6 duplicadas */
+    animation: slide 30s linear infinite; /* Movimiento continuo */
+}
+
+#carrusel img {
+    width: 1000px; /* Tamaño fijo */
+    height: 1000px; /* Mantiene las imágenes cuadradas */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan automáticamente */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-6000px); } /* Se mueve exactamente 6 imágenes */
+}
+
+
+/********** FOOTER ***********/
+#footer {
+    background-color:  rgb(38, 48, 86);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer p {
+    color: white;
+    font-size: 40px;
+    
+}
+ 
+
+
+
+
+
